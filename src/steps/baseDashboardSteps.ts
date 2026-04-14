@@ -30,51 +30,78 @@ When("I click button {string}", async function (text: string) {
 //  LẤY MAGIC LINK TỪ OUTLOOK UI
 When("I wait for magic link and navigate", { timeout: 120 * 10000 }, async function (this: CustomWorld) {
     const browser = await chromium.launch({ headless: false });
-
+ 
     try {
         const context = await browser.newContext({
             storageState: "outlook-auth.json",
         });
-
+ 
         const outlookPage = await context.newPage();
-
         await outlookPage.goto("https://outlook.office.com/mail");
-
-        await outlookPage.waitForSelector("div[role='main']", { timeout: 30000 });
-
+ 
+        await outlookPage.waitForSelector("div[role='main']", { timeout: 60000 });
+ 
         let magicLink: string | null = null;
-
-        for (let i = 0; i < 5; i++) {
-            const emailItem = outlookPage.locator("span:has-text('login')").first();
-
-            if (await emailItem.isVisible()) {
-                await emailItem.click();
-
+ 
+        for (let i = 0; i < 12; i++) {
+            console.log(`🔁 Checking inbox attempt ${i + 1}`);
+ 
+            await outlookPage.reload();
+ 
+            // ✅ FIX: dùng role option
+            await outlookPage.waitForSelector("div[role='option']", { timeout: 20000 });
+ 
+            await outlookPage.waitForTimeout(5000);
+ 
+            const emails = outlookPage.locator("div[role='option']");
+            const count = await emails.count();
+ 
+            console.log("📊 Email count:", count);
+ 
+            for (let j = 0; j < count; j++) {
+                const email = emails.nth(j);
+ 
+                const text = await email.innerText();
+ 
+                console.log(`📧 Email ${j}:`, text);
+ 
+                if (!text.includes("Login to DVCS Ops Insights")) continue;
+ 
+                console.log("✅ Found login email");
+ 
+                await email.click();
+ 
+                await outlookPage.waitForSelector("text=We've received a login request");
+ 
                 const linkElement = outlookPage.locator("a:has-text('Log In')");
-                await linkElement.waitFor({ state: "visible", timeout: 10000 });
-
+                await linkElement.waitFor({ state: "visible", timeout: 30000 });
+ 
                 magicLink = await linkElement.getAttribute("href");
                 break;
             }
-
-            console.log(` Chưa có mail... retry ${i + 1}`);
+ 
+            if (magicLink) break;
+ 
+            console.log("⏳ Chưa có mail login...");
             await outlookPage.waitForTimeout(5000);
-            await outlookPage.reload();
         }
-
+ 
         if (!magicLink) {
-            throw new Error(" Không lấy được magic link");
+            throw new Error("❌ Không tìm thấy magic link mới");
         }
-
-        console.log(" Magic link:", magicLink);
-
-        await this.page.goto(magicLink);
-        await this.page.waitForURL("**/dashboard");
-        await this.page.waitForTimeout(4000);
+ 
+        console.log("🔗 MAGIC LINK:", magicLink);
+ 
+        await this.page.goto(magicLink, {
+            waitUntil: "domcontentloaded",
+        });
+ 
+        await this.page.waitForLoadState("networkidle");
     } finally {
         await browser.close();
     }
 });
+ 
 // Verify text
 Then("user should be on dashboard", async function () {
     await this.page.waitForURL(`${process.env.BASE_URL}/en-us/dashboard?countryCode=gh`);
