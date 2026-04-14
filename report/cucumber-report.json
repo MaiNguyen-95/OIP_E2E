@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "dashboard-page;expand-and-collapse-module-details",
+        "id": "dashboard-page;select-time-range-and-module-filters",
         "keyword": "Scenario",
-        "line": 57,
-        "name": "Expand and collapse module details",
+        "line": 46,
+        "name": "Select time range and module filters",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 305017708
+              "duration": 351690042
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4564654875
+              "duration": 3403178500
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1417690125
+              "duration": 336239790
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87908957
+              "duration": 53765874
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23793095417
+              "duration": 28727564125
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 7,
             "name": "user should be on dashboard",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:79"
+              "location": "src/steps/baseDashboardSteps.ts:106"
             },
             "result": {
               "status": "passed",
-              "duration": 584833
+              "duration": 750875
             }
           },
           {
@@ -88,63 +88,50 @@
             "line": 8,
             "name": "I click button to select tenant",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:82"
+              "location": "src/steps/baseDashboardSteps.ts:109"
             },
             "result": {
               "status": "passed",
-              "duration": 57928125
+              "duration": 67769583
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 50,
+            "line": 40,
             "name": "I selects tenant \"Indonesia\"",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:86"
+              "location": "src/steps/baseDashboardSteps.ts:113"
             },
             "result": {
               "status": "passed",
-              "duration": 3345661209
+              "duration": 3354584209
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 51,
+            "line": 41,
             "name": "I select last result \"7d\"",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:116"
+              "location": "src/steps/baseDashboardSteps.ts:143"
             },
             "result": {
               "status": "passed",
-              "duration": 3144471208
+              "duration": 3117041917
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 52,
+            "line": 42,
             "name": "I click status modules if they have value",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:122"
+              "location": "src/steps/baseDashboardSteps.ts:149"
             },
             "result": {
               "status": "passed",
-              "duration": 4370074458
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 53,
-            "name": "I click to expand collapse details",
-            "match": {
-              "location": "src/steps/baseDashboardSteps.ts:173"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1862916
+              "duration": 4354690167
             }
           },
           {
@@ -152,14 +139,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31153625
+              "duration": 43528916
             }
           }
         ],
         "tags": [
           {
-            "name": "@ExpandCollapse",
-            "line": 48
+            "name": "@ModuleFilter",
+            "line": 38
           }
         ],
         "type": "scenario"
