@@ -1,0 +1,175 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "dashboard-page;expand-and-collapse-module-details",
+        "keyword": "Scenario",
+        "line": 57,
+        "name": "Expand and collapse module details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 305017708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4564654875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1417690125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87908957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23793095417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 584833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57928125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3345661209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3144471208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "I click status modules if they have value",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4370074458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "I click to expand collapse details",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1862916
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31153625
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ExpandCollapse",
+            "line": 48
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dashboard-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Dashboard Page",
+    "tags": [],
+    "uri": "src/features/oip_DasDashboard.feature"
+  }
+]

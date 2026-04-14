@@ -1,0 +1,31 @@
+{
+    "name": "playwright-cucumber-ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "cucumber-js --format json:report/cucumber-report.json",
+        "generate-report": "node generate-html-report.js",
+        "test:with-report": "npm run test || true && npm run generate-report",
+        "format": "prettier --write ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@cucumber/cucumber": "^12.5.0",
+        "@playwright/test": "^1.57.0",
+        "@types/imap-simple": "^4.2.10",
+        "@types/node": "^25.5.2",
+        "dotenv": "^17.4.1",
+        "eslint": "^9.39.2",
+        "prettier": "^3.8.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "imap-simple": "^5.1.0",
+        "prompt-sync": "^4.2.0"
+    }
+}

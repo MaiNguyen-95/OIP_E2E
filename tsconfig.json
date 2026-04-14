@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "5.0",
+    "lib": ["ES2022", "DOM"],
+    "types": [
+      "node",
+      "@playwright/test",
+      "@cucumber/cucumber"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "resolveJsonModule": true,   // 👈 THÊM DÒNG NÀY
+
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "rootDir": "./src",
+    "paths": {
+      "@pages/*": ["./src/pages/*"],
+      "@steps/*": ["./src/steps/*"],
+      "@support/*": ["./src/support/*"]
+    }
+  },
+"include": [
+  "src/**/*",
+  "src/saveAuth/saveStorage.ts"
+],
+  "exclude": [
+    "node_modules"
+  ]
+}
