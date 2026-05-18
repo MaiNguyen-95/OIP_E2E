@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "dashboard-page;expand-and-collapse-module-details",
+        "id": "dashboard-page;login-and-select-tenant",
         "keyword": "Scenario",
-        "line": 57,
-        "name": "Expand and collapse module details",
+        "line": 15,
+        "name": "Login and select tenant",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 305017708
+              "duration": 380325624
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4564654875
+              "duration": 842400541
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1417690125
+              "duration": 179655208
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87908957
+              "duration": 46154666
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23793095417
+              "duration": 17818722583
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 7,
             "name": "user should be on dashboard",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:79"
+              "location": "src/steps/baseDashboardSteps.ts:108"
             },
             "result": {
               "status": "passed",
-              "duration": 584833
+              "duration": 813333
             }
           },
           {
@@ -88,11 +88,594 @@
             "line": 8,
             "name": "I click button to select tenant",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:82"
+              "location": "src/steps/baseDashboardSteps.ts:111"
             },
             "result": {
               "status": "passed",
-              "duration": 57928125
+              "duration": 63710583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3384121875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51562500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;select-overall-availability-filter",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Select overall availability filter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 223842832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 483830582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 144959500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39853957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17081145042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 474874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55201999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3381520291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I select \"overall-availability-section\" filter project \"Yara Farmcare\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3409223208
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51065249
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@OverallAvailability",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;select-latency-filter",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Select latency filter",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216519292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 537942167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74969624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38741165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16772167790
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 886500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64135250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3376639041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I select \"latency-section\" filter project \"Yara Connect\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3388967791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I select latency time \"30d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3103735916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I click view all services",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:133"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3073651750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I click close view all services",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:139"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3041008832
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67165083
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Latency",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;select-time-range-and-module-filters",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Select time range and module filters",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 223378499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 556030832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142248875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35235916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15806437375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 613959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62544084
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3363180124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3122164791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "I click status modules if they have value",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:151"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6473930082
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46352083
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ModuleFilter",
+            "line": 38
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;expand-and-collapse-project-on-dashboard",
+        "keyword": "Scenario Outline",
+        "line": 57,
+        "name": "Expand and collapse project on dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 220390457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 597482582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151015292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36509332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15952067292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 564958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67947833
             }
           },
           {
@@ -101,50 +684,50 @@
             "line": 50,
             "name": "I selects tenant \"Indonesia\"",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:86"
+              "location": "src/steps/baseDashboardSteps.ts:115"
             },
             "result": {
               "status": "passed",
-              "duration": 3345661209
+              "duration": 3361820625
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 51,
-            "name": "I select last result \"7d\"",
+            "name": "I select last result \"24h\"",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:116"
+              "location": "src/steps/baseDashboardSteps.ts:145"
             },
             "result": {
               "status": "passed",
-              "duration": 3144471208
+              "duration": 3125424582
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 52,
-            "name": "I click status modules if they have value",
+            "name": "I expand project \"Yara Connect\"",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:122"
+              "location": "src/steps/baseDashboardSteps.ts:201"
             },
             "result": {
               "status": "passed",
-              "duration": 4370074458
+              "duration": 3009657999
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 53,
-            "name": "I click to expand collapse details",
+            "name": "I collapse project \"Yara Connect\"",
             "match": {
-              "location": "src/steps/baseDashboardSteps.ts:173"
+              "location": "src/steps/baseDashboardSteps.ts:207"
             },
             "result": {
               "status": "passed",
-              "duration": 1862916
+              "duration": 6066187582
             }
           },
           {
@@ -152,14 +735,1218 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 31153625
+              "duration": 54960833
             }
           }
         ],
         "tags": [
           {
-            "name": "@ExpandCollapse",
+            "name": "@ExpandCollapseProject",
             "line": 48
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;expand-and-collapse-module-on-dashboard",
+        "keyword": "Scenario Outline",
+        "line": 70,
+        "name": "Expand and collapse module on dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 240173624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 514760999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91190208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29258417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17339285792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 752708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63417707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3356778167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "I select last result \"24h\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3127943166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "I expand project \"Yara Farmcare\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3009405666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "I expand module \"YFC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:213"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 36369500,
+              "error_message": "locator.waitFor: Error: strict mode violation: locator('//span[contains(normalize-space(),\\'YFC - Identity Management\\')]/ancestor::button[@type=\\'button\\']') resolved to 2 elements:\n    1) <button type=\"button\" id=\"radix-:rs6:\" data-state=\"closed\" aria-expanded=\"false\" aria-controls=\"radix-:rs7:\" data-orientation=\"vertical\" data-radix-collection-item=\"\" class=\"flex flex-1 items-center justify-between py-4 font-medium transition-all [&[data-state=open]>svg]:rotate-180 cursor-default hover:no-underline\">…</button> aka getByRole('button', { name: 'YFC - Identity Management 1' })\n    2) <button type=\"button\" id=\"radix-:rt0:\" data-state=\"closed\" aria-expanded=\"false\" aria-controls=\"radix-:rt1:\" data-orientation=\"vertical\" data-radix-collection-item=\"\" class=\"flex flex-1 items-center justify-between py-4 font-medium transition-all [&[data-state=open]>svg]:rotate-180 cursor-default hover:no-underline\">…</button> aka getByRole('button', { name: 'YFC - Identity Management (' })\n\nCall log:\n\u001b[2m  - waiting for locator('//span[contains(normalize-space(),\\'YFC - Identity Management\\')]/ancestor::button[@type=\\'button\\']') to be visible\u001b[22m\n\n    at BaseDashboard.expandModule (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/pages/baseDashboard.ts:236:15)\n    at CustomWorld.<anonymous> (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/steps/baseDashboardSteps.ts:214:28)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "I collapse module \"YFC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:219"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "I collapse project \"Yara Farmcare\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:207"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32927541
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ExpandCollapseModule",
+            "line": 59
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;click-module-on-dashboard",
+        "keyword": "Scenario Outline",
+        "line": 80,
+        "name": "Click module on dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 226688332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485748542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113680208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35401209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16892849874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 732500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59983166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3374152665
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3124121875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "I expand project \"Yara Connect\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3009123208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "I click module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:225"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6127561332
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46726833
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ClickModule",
+            "line": 71
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;click-module-on-dashboard",
+        "keyword": "Scenario Outline",
+        "line": 81,
+        "name": "Click module on dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 225919042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 475840374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74052207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34794832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15398897708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 716000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74226041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 73,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3387654915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3130850000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "I expand project \"Yara Connect\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3008650666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "I click module \"YC - Home Screen\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:225"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6126938165
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51257249
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ClickModule",
+            "line": 71
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;expand-module-and-click-submodule-on-dashboard",
+        "keyword": "Scenario Outline",
+        "line": 92,
+        "name": "Expand module and click submodule on dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 233603292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 479497666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218417874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36701583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16054883666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1069333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63913000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3368061916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 86,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3369035791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 87,
+            "name": "I expand project \"Yara Connect\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3010657249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "I click submodule \"Identity\" in module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:231"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 6124944417,
+              "error_message": "locator.waitFor: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[contains(normalize-space(),\\'YC - Identity Management\\')]/ancestor::button[@type=\\'button\\']').locator('xpath=ancestor::div[contains(@class,\\'border-b\\')]').locator('//span[@class=\\'cursor-pointer\\' and normalize-space()=\\'Identity\\']') to be visible\u001b[22m\n\n    at BaseDashboard.clickSubModule (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/pages/baseDashboard.ts:265:15)\n    at CustomWorld.<anonymous> (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/steps/baseDashboardSteps.ts:233:28)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35762792
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ClickSubModule",
+            "line": 83
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;click-bar-chart-of-module-or-submodule",
+        "keyword": "Scenario Outline",
+        "line": 106,
+        "name": "Click bar chart of module or submodule",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 231879625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 513285749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218022583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43386583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17551175749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59834875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 97,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3373847041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3119909333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 99,
+            "name": "I expand project \"Yara Connect\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3009830000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 100,
+            "name": "I expand module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:213"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6148674959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 101,
+            "name": "I click bar chart 0 of module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:238"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3004839875,
+              "error_message": "locator.waitFor: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[contains(normalize-space(),\\'YC - Identity Management\\')]/ancestor::button[@type=\\'button\\']').locator('xpath=ancestor::div[contains(@class,\"items-center p-0\")]').locator('div.cursor-pointer').first() to be visible\u001b[22m\n\n    at BaseDashboard.clickBarChartModule (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/pages/baseDashboard.ts:273:15)\n    at CustomWorld.<anonymous> (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/steps/baseDashboardSteps.ts:239:28)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 102,
+            "name": "I click bar chart 0 of submodule \"Signup\" in module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:242"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56356250
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ClickBarChart",
+            "line": 95
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;click-filter-box-of-module",
+        "keyword": "Scenario Outline",
+        "line": 117,
+        "name": "Click filter box of module",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 239974791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 711975625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218605457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48832250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16765877624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 588667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63730665
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 110,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3371999667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 111,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3093027250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 112,
+            "name": "I expand project \"Yara Connect\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3009984333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 113,
+            "name": "I click \"passing\" filter box of module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:250"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8005535250,
+              "error_message": "locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[contains(normalize-space(),\\'YC - Identity Management\\')]/ancestor::button[@type=\\'button\\']').locator('xpath=ancestor::div[contains(@class,\"items-center p-0\")]').locator('div.cursor-pointer.rounded').first() to be visible\u001b[22m\n\n    at BaseDashboard.clickFilterIfHasValue (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/pages/baseDashboard.ts:287:19)\n    at BaseDashboard.FilterModule (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/pages/baseDashboard.ts:296:16)\n    at CustomWorld.<anonymous> (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/steps/baseDashboardSteps.ts:251:28)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 76284875
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ClickFilterboxModule",
+            "line": 108
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dashboard-page;click-filter-box-of-submodule",
+        "keyword": "Scenario Outline",
+        "line": 129,
+        "name": "Click filter box of submodule",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 221651917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user is on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487788499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I fill input \"email\" with \"mai.nguyen@yara.com\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121064833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I click button \"Send login link\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60068666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I wait for magic link and navigate",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16363155792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user should be on dashboard",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:108"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 438790
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click button to select tenant",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55285290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 121,
+            "name": "I selects tenant \"Indonesia\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3355829457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 122,
+            "name": "I select last result \"7d\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3125972165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 123,
+            "name": "I expand project \"Yara Connect\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3009292333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 124,
+            "name": "I expand module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:213"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6117669208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 125,
+            "name": "I click \"passing\" filter box of submodule \"Signup\" in module \"YC - Identity Management\"",
+            "match": {
+              "location": "src/steps/baseDashboardSteps.ts:255"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 8006022375,
+              "error_message": "locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//span[contains(normalize-space(),\\'YC - Identity Management\\')]/ancestor::button[@type=\\'button\\']').locator('xpath=ancestor::div[contains(@class,\\'border-b\\')]').locator('//span[@class=\\'cursor-pointer\\' and normalize-space()=\\'Signup\\']').locator('xpath=ancestor::div[contains(@class,\"items-center p-0\")]').locator('div.cursor-pointer.rounded').first() to be visible\u001b[22m\n\n    at BaseDashboard.clickFilterIfHasValue (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/pages/baseDashboard.ts:287:19)\n    at BaseDashboard.FilterSubModule (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/pages/baseDashboard.ts:300:16)\n    at CustomWorld.<anonymous> (/Users/nguyenthimai/code/Auto_OIP/OIP_E2E/src/steps/baseDashboardSteps.ts:258:30)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50868833
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ClickFilterboxSubModule",
+            "line": 119
           }
         ],
         "type": "scenario"
