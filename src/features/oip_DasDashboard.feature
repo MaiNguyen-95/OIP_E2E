@@ -44,3 +44,86 @@ Feature: Dashboard Page
         Examples:
             | tenant    | lastResult |
             | Indonesia | 7d         |
+
+    @ExpandCollapseProject
+    Scenario Outline: Expand and collapse project on dashboard
+        And I selects tenant "<tenant>"
+        And I select last result "<lastResult>"
+        And I expand project "<project>"
+        And I collapse project "<project>"
+
+        Examples:
+            | tenant    | lastResult | project      |
+            | Indonesia | 24h        | Yara Connect |
+
+    @ExpandCollapseModule
+    Scenario Outline: Expand and collapse module on dashboard
+        And I selects tenant "<tenant>"
+        And I select last result "<lastResult>"
+        And I expand project "<project>"
+        And I expand module "<module>"
+        And I collapse module "<module>"
+        And I collapse project "<project>"
+
+        Examples:
+            | tenant    | lastResult | project       | module                    |
+            | Indonesia | 24h        | Yara Farmcare | YFC - Identity Management |
+    @ClickModule
+    Scenario Outline: Click module on dashboard
+        And I selects tenant "<tenant>"
+        And I select last result "<lastResult>"
+        And I expand project "<project>"
+        And I click module "<module>"
+
+        Examples:
+            | tenant    | lastResult | project      | module                   |
+            | Indonesia | 7d         | Yara Connect | YC - Identity Management |
+            | Indonesia | 7d         | Yara Connect | YC - Home Screen         |
+
+    @ClickSubModule
+    Scenario Outline: Expand module and click submodule on dashboard
+        And I selects tenant "<tenant>"
+        And I select last result "<lastResult>"
+        And I expand project "<project>"
+        And I click submodule "<subModule>" in module "<module>"
+
+        Examples:
+            | tenant    | lastResult | project      | module                   | subModule |
+            | Indonesia | 7d         | Yara Connect | YC - Identity Management | Identity  |
+
+
+    @ClickBarChart
+    Scenario Outline: Click bar chart of module or submodule
+        And I selects tenant "<tenant>"
+        And I select last result "<lastResult>"
+        And I expand project "<project>"
+        And I expand module "<module>"
+        And I click bar chart <barIndex> of module "<module>"
+        And I click bar chart <barIndex> of submodule "<subModule>" in module "<module>"
+
+        Examples:
+            | tenant    | lastResult | project      | module                   | subModule | barIndex |
+            | Indonesia | 7d         | Yara Connect | YC - Identity Management | Signup    | 0        |
+
+    @ClickFilterboxModule
+    Scenario Outline: Click filter box of module
+        And I selects tenant "<tenant>"
+        And I select last result "<lastResult>"
+        And I expand project "<project>"
+        And I click "<statType>" filter box of module "<module>"
+
+        Examples:
+            | tenant    | lastResult | project      | module                   | statType |
+            | Indonesia | 7d         | Yara Connect | YC - Identity Management | passing  |
+
+    @ClickFilterboxSubModule
+    Scenario Outline: Click filter box of submodule
+        And I selects tenant "<tenant>"
+        And I select last result "<lastResult>"
+        And I expand project "<project>"
+        And I expand module "<module>"
+        And I click "<statType>" filter box of submodule "<subModule>" in module "<module>"
+
+        Examples:
+            | tenant    | lastResult | project      | module                   | subModule | statType |
+            | Indonesia | 7d         | Yara Connect | YC - Identity Management | Signup    | passing  |
